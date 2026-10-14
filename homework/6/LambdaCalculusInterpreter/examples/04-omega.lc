@@ -1,7 +1,0 @@
-# 04-omega.lc：發散項 Ω 與求值策略差異
-# 執行：
-#   python lambda_interp.py examples/04-omega.lc --max-steps 10
-#   python lambda_interp.py --strategy applicative --prelude examples/prelude.lc examples/04-strategy.lc
-
-# Ω = (λx.x x)(λx.x x)，永遠化簡不完 → 解譯器會顯示達到步數上限
-(\x.x x) (\x.x x)
