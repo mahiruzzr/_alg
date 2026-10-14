@@ -1,0 +1,15 @@
+# 07-list.lc：Church List — CONS / CAR / CDR / RANGE 概念
+# 執行：python lambda_interp.py --prelude examples/prelude.lc examples/07-list.lc
+
+# CAR (CONS 1 2) → 1
+CAR (CONS 1 2)
+
+# CDR (CONS 1 2) → 2
+CDR (CONS 1 2)
+
+# CAR (CDR (CONS 1 (CONS 2 3))) → 2
+CAR (CDR (CONS 1 (CONS 2 3)))
+
+# ISNIL NIL → TRUE；ISNIL (CONS 1 2) → FALSE
+ISNIL NIL
+ISNIL (CONS 1 2)

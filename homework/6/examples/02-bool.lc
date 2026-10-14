@@ -1,0 +1,21 @@
+# 02-bool.lc：Church Booleans + IF 邏輯
+# 執行：python lambda_interp.py --prelude examples/prelude.lc examples/02-bool.lc
+# 需要 prelude（TRUE/FALSE/AND/OR/NOT/IF）
+
+# IF TRUE a b → a
+IF TRUE a b
+
+# IF FALSE a b → b
+IF FALSE a b
+
+# AND TRUE FALSE → FALSE
+AND TRUE FALSE
+
+# OR TRUE FALSE → TRUE
+OR TRUE FALSE
+
+# NOT TRUE → FALSE
+NOT TRUE
+
+# XOR TRUE TRUE → FALSE
+XOR TRUE TRUE

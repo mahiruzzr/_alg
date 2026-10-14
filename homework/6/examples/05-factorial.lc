@@ -1,0 +1,10 @@
+# 05-factorial.lc：Y combinator 遞迴 — 階乘
+# 執行：
+#   python lambda_interp.py --prelude examples/prelude.lc examples/05-factorial.lc --max-steps 300
+#   （FACT 2 約 142 步；FACT 3 約 694 步，請用 --max-steps 800）
+# FACT = Y (λf.λn. IF (ISZERO n) 1 (MULT n (f (PRED n))))
+# 注意：Y 在 applicative 下會發散，本範例請用預設 normal 策略。
+
+let FACT = Y (\f.\n.IF (ISZERO n) 1 (MULT n (f (PRED n))))
+
+FACT 2
