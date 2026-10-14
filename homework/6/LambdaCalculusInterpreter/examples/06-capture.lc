@@ -1,0 +1,5 @@
+# 06-capture.lc：變數捕捉與 α-conversion 展示
+# 執行：python lambda_interp.py examples/06-capture.lc
+# (λx.λy.x y) y ：若直接代入會把自由的 y 捕捉成 bound，正確做法是先 α-轉換 λy → λvN
+
+(\x.\y.x y) y
